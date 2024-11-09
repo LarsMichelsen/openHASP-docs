@@ -39,6 +39,9 @@ By default the display is always on. To get the dimmable backlight working you *
 There is a `Lite` pin which is not connected to any pads but you can connect it to control the backlight.
 You can connect it to a PWM output pin, like `GPIO 21`:
 
+!!! note "<i class='fa fa-info-circle'></i>&nbsp; Note" 
+    When using Adafruit ESP32 Feather V2 the 'corner' pin next to TX has changed from pin 21 to 37 and is also changed from a GPIO to input-only, which means it can not be used for the backlight. You can use e.g. `GPIO 26` instead.
+
 <div class="row justify-content-center">
             <a href="https://raw.githubusercontent.com/HASwitchPlate/openHASP-docs/master/docs/assets/images/devices/featherwing35-backlight.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-8" data-title="Backlight Control" data-footer="Original image by altersis">
                 <img src="../../assets/images/devices/featherwing35-backlight.png" class="img-fluid">
